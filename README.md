@@ -68,7 +68,9 @@ También pueden ejecutar una sesión interactiva en la terminal lo cual hace que
 
 Para conocer un poco más del testeo unitario automatizado recomendamos leer [este apunte](https://docs.google.com/document/d/17EPSZSw7oY_Rv2VjEX2kMZDFklMOcDVVxyve9HSG0mE/edit#)
 
-## El enunciado
+-------------------------------
+
+# El enunciado
 
 ### Parte 0: git
 
