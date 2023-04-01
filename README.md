@@ -1,13 +1,5 @@
 # TP-1
 
-## Tareas
-
-- [ ] Aceptar el assignment y clonar el repositorio con el ejercicio
-- [ ] Ir a la carpeta donde descargaste el ejercicio. Ejemplo: `cd /home/juan/haskell/2022-funcional-tp-1`. Ejecutar `stack build --test`.
-- [ ] Resolver el ejercicio siguiendo [un esquema de trabajo](https://github.com/pdep-utn/enunciados-miercoles-noche/blob/master/pages/haskell/trabajo.md), eso incluye
-- [ ] Ejecutar los tests con `stack test` y que den verde
-- [ ] A medida que vas resolviendo el ejercicio, subir [el progreso a git](https://github.com/pdep-utn/enunciados-miercoles-noche/blob/master/pages/git/resolverConflictos.md)
-
 ## Grupo, nombre y legajo de integrantes
 
 - Nombre del grupo: **Completar**
@@ -81,7 +73,7 @@ Para cada integrante del grupo:
 
 Este ejercicio está partido en 4 partes que van aumentando de a poco en complejidad. En cada uno van a tener que implementar las definiciones de algunas funciones para las que ya les vamos a dar tests que prueben que su solución esta funcionando correctamente y (en la mayoría de los casos) los tipos. Algunas de las funciones además de pedirles la implementación también les vamos a pedir que definan sus tipos.
 
-### 1. Números
+### 1. Números 🔢
 
 Empecemos definiendo algunas funciones simples sobre números:
 
@@ -91,7 +83,7 @@ Empecemos definiendo algunas funciones simples sobre números:
 
 ----
 
-### 2. Temperaturas
+### 2. Temperaturas 🌡️
 
 Las temperaturas en diferentes países se miden en grados, pero no todos usan el mismo sistema de medida. En la mayor partedel el mundo usamos los grados Celsius (°C) pero en algunos países como en Estados Unidos se usan los grados Farenheit (°F).
 ¿Cómo se pasa de celsius a farenheit? Usando la siguiente formula:
@@ -134,7 +126,7 @@ Implementar las siguientes funciones, escribiendo su tipo:
 
 ---
 
-## 3. Más números!
+## 3. Más números! 📈
 
 Acá vamos a definir un par de funciones muy útiles, `max` y `min`.
 - **max** toma dos valores como parámetro y nos devuelve aquel que sea mas grande
@@ -150,7 +142,7 @@ Como estas funciones ya existen en Haskell, pero queremos definirlas igual para 
 - **cuantosDiasTiene**, que dado un año nos devuelve la cantidad de días de ese año. Un año tiene 365 días si no es bisiesto y 366 si sí lo es.
 ---
 
-### 4. Pinos
+### 4. Pinos 🌲
 
 En una plantación de pinos, de cada árbol se conoce la altura expresada en metros. El peso de un pino se puede calcular a partir de la altura así:
 
