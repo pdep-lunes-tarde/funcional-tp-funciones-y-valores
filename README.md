@@ -73,7 +73,7 @@ Para cada integrante del grupo:
 
 Este ejercicio está partido en 4 partes que van aumentando de a poco en complejidad. En cada uno van a tener que implementar las definiciones de algunas funciones para las que ya les vamos a dar tests que prueben que su solución esta funcionando correctamente y (en la mayoría de los casos) los tipos. Algunas de las funciones además de pedirles la implementación también les vamos a pedir que definan sus tipos.
 
-### 1. Números 🔢
+### 1. [Repasando funciones] Números 🔢
 
 Empecemos definiendo algunas funciones simples sobre números:
 
@@ -98,7 +98,7 @@ Implementar las siguientes funciones, escribiendo su tipo:
 
 ----
 
-### 2. Temperaturas 🌡️
+### 2. [Empezando a testear] Temperaturas 🌡️
 
 Las temperaturas en diferentes países se miden en grados, pero no todos usan el mismo sistema de medida. En la mayor partedel el mundo usamos los grados Celsius (°C) pero en algunos países como en Estados Unidos se usan los grados Farenheit (°F).
 ¿Cómo se pasa de celsius a farenheit? Usando la siguiente formula:
@@ -127,7 +127,7 @@ Ahora, queremos una función a la cuál podamos preguntarle si hace frío o no. 
 
 ---
 
-## 3. Más números! 📈
+## 3. [Guardas] Más números! 📈
 
 Acá vamos a definir un par de funciones muy útiles, `max` y `min`.
 - **max** toma dos valores como parámetro y nos devuelve aquel que sea mas grande
