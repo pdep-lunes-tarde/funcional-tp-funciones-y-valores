@@ -81,6 +81,21 @@ Empecemos definiendo algunas funciones simples sobre números:
 - **esPositivo**: nos dice si un número es mayor a 0 o no. Es falso para 0.
 - **inversa**: aplicar la inversa a un número nos da como resultado 1 dividido ese número. Por ejemplo, la inversa de 2 es 0.5 porque 1/2 es 0.5. **Para está función, también tienen que escribir el tipo ustedes**
 
+---
+
+### 1.5⚡**Bonus OPCIONAL**⚡Perímetros y áreas
+
+Implementar las siguientes funciones, escribiendo su tipo:
+- **perimetroCirculo** dado un radio. Ej:
+```haskell
+>>> perimetroCirculo 3
+18.8495559215387587
+```
+- **perimetroCuadrado** dado un lado.
+- **superficieCuadrado** dado un lado.
+- **superficieCubo** dado un lado.
+- **superficieCilindro** dado un radio y una altura.
+
 ----
 
 ### 2. Temperaturas 🌡️
@@ -109,20 +124,6 @@ Ahora, queremos una función a la cuál podamos preguntarle si hace frío o no. 
 - **haceFrioFarenheit**: ésta recibe la temperatura como parámetro en Farenheit, pero el criterio para saber si hace frío es el mismo de antes.
 
 **Para `haceFrioCelsius` y `haceFrioFarenheit` también tienen que escribir el tipo ustedes**.
-
----
-### 2.5⚡**Bonus OPCIONAL**⚡Perímetros y áreas
-
-Implementar las siguientes funciones, escribiendo su tipo:
-- **perimetroCirculo** dado un radio. Ej:
-```haskell
->>> perimetroCirculo 3
-18.8495559215387587
-```
-- **perimetroCuadrado** dado un lado.
-- **superficieCuadrado** dado un lado.
-- **superficieCubo** dado un lado.
-- **superficieCilindro** dado un radio y una altura.
 
 ---
 
