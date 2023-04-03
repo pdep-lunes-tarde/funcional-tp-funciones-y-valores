@@ -140,6 +140,10 @@ Como estas funciones ya existen en Haskell, pero queremos definirlas igual para 
 ### 3.5⚡**Bonus OPCIONAL**⚡
 
 - **cuantosDiasTiene**, que dado un año nos devuelve la cantidad de días de ese año. Un año tiene 365 días si no es bisiesto y 366 si sí lo es.
+- En un supermercado hay una promoción al comprar al por mayor, entonces queremos definir una función **precioTotal** que represente esa promoción. Las reglas de la misma son, dado el valor unitario del producto y la cantidad de productos comprados:
+  - Si se compraron menos de 3, el total es el precio del producto por la cantidad.
+  - Si se compraron entre 3 y 10, el total es el 90% del precio del producto por la cantidad.
+  - Si se compraron entre 10 y 20, el total es el 70% del precio del producto por la cantidad.
 ---
 
 ### 4. Pinos 🌲
