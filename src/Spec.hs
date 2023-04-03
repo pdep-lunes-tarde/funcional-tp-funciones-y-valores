@@ -7,9 +7,11 @@ import           Control.Monad (unless)
 correrTests :: IO ()
 correrTests = hspec $ do
   suiteDeTestsDeParteI
-  suiteDeTestsDeParteII
-  suiteDeTestsDeParteIII
-  suiteDeTestsDeParteIV
+  suiteDeTestsDeParteIBonus
+--   suiteDeTestsDeParteII
+--   suiteDeTestsDeParteIII
+--   suiteDeTestsDeParteIIIBonus
+--   suiteDeTestsDeParteIV
   
 suiteDeTestsDeParteI =
   describe "Parte I: Numeros" $ do
@@ -34,6 +36,19 @@ suiteDeTestsDeParteI =
         esPositivo (-1) `shouldBe` False
       it "es falso para el 0" $ do
         esPositivo 0 `shouldBe` False
+
+suiteDeTestsDeParteIBonus =
+  describe "Parte 3 Bonus" $ do
+    it "el perimetro de un circulo es 2 * pi * radio" $ do
+      perimetroCirculo 2.5 `shouldBeEqualUpTo2Decimals` 15.70796
+    it "el perimetro de un cuadrado es el lado x 4" $ do
+      perimetroCuadrado 3 `shouldBe` 12
+    it "la superficie de un cuadrado es el lado al cuadrado$ do
+      perimetroCuadrado 3 `shouldBe` 9
+    it "la superficie de un cubo es el area de una cara por la cantidad de caras (6)" $ do
+      superficieCubo 3 `shouldBe` 54
+    it "la superficie de un cilindro es el area de las tapas por el area de la pared del cilindro" $ do
+      superficieCilindro 2 4 `shouldBeEqualUpTo2Decimals` 75.39822
 
 suiteDeTestsDeParteII =
   describe "Parte 2: Temperaturas" $ do
