@@ -26,6 +26,24 @@ haceFrioCelsius grados = implementame
 -- escriban el tipo de esta función
 haceFrioFarenheit grados = implementame
 
+-- 2.5 Bonus
+-- Descomentar las siguientes líneas si van a resolver esta parte
+-- perimetroCirculo :: Number -> Number
+-- perimetroCirculo radio = implementame
+
+-- perimetroCuadrado :: Number -> Number
+-- perimetroCuadrado lado = implementame
+
+-- superficieCuadrado :: Number -> Number
+-- superficieCuadrado lado = implementame
+
+-- superficieCubo :: Number -> Number
+-- superficieCubo lado = implementame
+
+-- superficieCilindro :: Number -> Number -> Number
+-- superficieCilindro radio altura = implementame
+
+
 -- 3. Mas numeros!
 
 max' :: Number -> Number -> Number
@@ -33,6 +51,14 @@ max' = implementame
 
 min' :: Number -> Number -> Number
 min' = implementame
+
+-- 3.5 Bonus
+-- Descomentar las siguientes líneas si van a resolver esta parte
+-- cuantosDiasTiene :: Number -> Number
+-- cuantosDiasTiene anio = implementame
+
+-- precioTotal :: Number -> Number -> Number
+-- precioTotal valorUnitario cantidad = implementame
 
 -- 4. Pinos
 
