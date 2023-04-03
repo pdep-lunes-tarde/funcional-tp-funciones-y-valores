@@ -123,6 +123,7 @@ Ahora, queremos una función a la cuál podamos preguntarle si hace frío o no. 
 - **haceFrioCelsius**: recibe una temperatura (en Celsius) y debería ser verdadero si hace igual o menos de 8 grados Celsius.
 - **haceFrioFarenheit**: ésta recibe la temperatura como parámetro en Farenheit, pero el criterio para saber si hace frío es el mismo de antes.
 
+**Para las funciones de este punto hay que completar y/o escribir los tests**.
 **Para `haceFrioCelsius` y `haceFrioFarenheit` también tienen que escribir el tipo ustedes**.
 
 ---
@@ -136,6 +137,7 @@ Entonces, yo puedo hacer `min 2 3` y el resultado sería `2`, y si hago `max 3 1
 
 Como estas funciones ya existen en Haskell, pero queremos definirlas igual para practicar, vamos a ponerles de nombre `max'` y `min'` (el ' es un caracter valido para las funciones en Haskell), y en este ejercicio no vale definirlas como `max' = max` ;).
 
+**Para las funciones de este punto hay que escribir los tests**.
 ---
 
 ### 3.5⚡**Bonus OPCIONAL**⚡
@@ -144,7 +146,7 @@ Como estas funciones ya existen en Haskell, pero queremos definirlas igual para 
 - En un supermercado hay una promoción al comprar al por mayor, entonces queremos definir una función **precioTotal** que represente esa promoción. Las reglas de la misma son, dado el valor unitario del producto y la cantidad de productos comprados:
   - Si se compraron menos de 3, el total es el precio del producto por la cantidad.
   - Si se compraron entre 3 y 10, el total es el 90% del precio del producto por la cantidad.
-  - Si se compraron entre 10 y 20, el total es el 70% del precio del producto por la cantidad.
+  - Si se compraron 10 o mas, el total es el 70% del precio del producto por la cantidad.
 ---
 
 ### 4. Pinos 🌲
@@ -171,6 +173,7 @@ Vamos a definir las siguientes funciones, y en este punto, todas van a ser tipad
 - **esPesoUtil**: recibe un peso en kg y responde si un pino de ese peso le sirve a la fábrica
 - **sirvePino**: recibe la altura de un pino y responde si un pino de ese peso le sirve a la fábrica. 
 
+**Para las funciones de este punto hay que escribir los tests**.
 
 ## Que hacer cuando terminan el TP
 

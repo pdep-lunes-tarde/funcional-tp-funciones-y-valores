@@ -3,15 +3,17 @@ import PdePreludat
 import Library
 import Test.Hspec
 import           Control.Monad (unless)
+import Test.Hspec.Runner (Config(..), hspecWith, defaultConfig)
+import Test.Hspec.Formatters (progress, specdoc)
 
 correrTests :: IO ()
-correrTests = hspec $ do
-  suiteDeTestsDeParteI
+correrTests = runHspec $ do
+  focus suiteDeTestsDeParteI
   suiteDeTestsDeParteIBonus
---   suiteDeTestsDeParteII
---   suiteDeTestsDeParteIII
---   suiteDeTestsDeParteIIIBonus
---   suiteDeTestsDeParteIV
+  focus suiteDeTestsDeParteII
+  suiteDeTestsDeParteIII
+  suiteDeTestsDeParteIIIBonus
+  suiteDeTestsDeParteIV
   
 suiteDeTestsDeParteI =
   describe "Parte I: Numeros" $ do
@@ -43,7 +45,7 @@ suiteDeTestsDeParteIBonus =
       perimetroCirculo 2.5 `shouldBeEqualUpTo2Decimals` 15.70796
     it "el perimetro de un cuadrado es el lado x 4" $ do
       perimetroCuadrado 3 `shouldBe` 12
-    it "la superficie de un cuadrado es el lado al cuadrado$ do
+    it "la superficie de un cuadrado es el lado al cuadrado" $ do
       perimetroCuadrado 3 `shouldBe` 9
     it "la superficie de un cubo es el area de una cara por la cantidad de caras (6)" $ do
       superficieCubo 3 `shouldBe` 54
@@ -52,91 +54,97 @@ suiteDeTestsDeParteIBonus =
 
 suiteDeTestsDeParteII =
   describe "Parte 2: Temperaturas" $ do
-
     describe "celsiusAFarenheit" $ do
       it "pasa una temperatura de celsius a farenheit" $ do
-        celsiusAFarenheit (-40) `shouldBeEqualUpTo2Decimals` (-40)
-        celsiusAFarenheit (-18) `shouldBeEqualUpTo2Decimals` (-0.4)
-        celsiusAFarenheit 0 `shouldBeEqualUpTo2Decimals` 32
-        celsiusAFarenheit 10 `shouldBeEqualUpTo2Decimals` 50
+        pendingWith "Reemplacen los implementame con valores de prueba que ustedes elijan. Luego borren esta linea"
+        celsiusAFarenheit implementame `shouldBeEqualUpTo2Decimals` implementame
 
     describe "farenheitACelsius" $ do
       it "pasa una temperatura de farenheit a celsius" $ do
-        farenheitACelsius (-40) `shouldBeEqualUpTo2Decimals` (-40)
-        farenheitACelsius (-0.4) `shouldBeEqualUpTo2Decimals` (-18)
-        farenheitACelsius 32  `shouldBeEqualUpTo2Decimals` 0
-        farenheitACelsius 50 `shouldBeEqualUpTo2Decimals` 10
+        pendingWith "reemplacen los 'implementame' por valores de prueba que ustedes elijan, luego borren esta linea"
+        farenheitACelsius implementame `shouldBeEqualUpTo2Decimals` implementame
 
-    it "farenheitACelsius y celsiusAFarenheit son inversas (usar una y luego la otra da el numero original)" $ do
-      farenheitACelsius (celsiusAFarenheit (-40)) `shouldBeEqualUpTo2Decimals` (-40)
-      farenheitACelsius (celsiusAFarenheit (-0.4)) `shouldBeEqualUpTo2Decimals` (-0.4)
-      farenheitACelsius (celsiusAFarenheit 32) `shouldBeEqualUpTo2Decimals` 32
-      farenheitACelsius (celsiusAFarenheit 50) `shouldBeEqualUpTo2Decimals` 50
+    describe "farenhetiACelsius y celsiusAFarenheit son inversas" $ do
+      it "convertir un valor en celsius a farenheit y luego volver a convertir a celsius retorna el valor original" $ do
+        pendingWith "Escriban el cuerpo de un test en el que se chequee que si convierto un numero a farenheit y luego convierto el resultado a celsius obtengo el valor original"
+      it "convertir un valor en farenheit a celsius y luego volver a convertir a farenheit retorna el valor original" $ do
+        pendingWith "Lo mismo que el test anterior pero al reves"
+      
 
     describe "haceFrioCelsius" $ do
-      it "es verdad cuando hacen menos de 8 grados celsius" $ do
-        haceFrioCelsius 7 `shouldBe` True
-      it "es verdad cuando hacen exactamente 8 grados celsius" $ do
+      -- Pista: hay 3 casos a testear
+      it "Es verdad cuando hacen menos de 8 grados celsius" $ do
+        pendingWith "Escribir el cuerpo de este test"
+        
+      it "" $ do
+        pendingWith "Escribir un nombre para este test"
         haceFrioCelsius 8 `shouldBe` True
-      it "es falso cuando hacen mas de 8 grados celsius" $ do
-        haceFrioCelsius 9 `shouldBe` False
+      it "" $ do
+        pendingWith "Pensar un caso para este test, escribir el nombre y el cuerpo del mismo"
 
     describe "haceFrioFarenheit" $ do
-      it "es verdad cuando hacen menos de 8 grados celsius (46.4 F)" $ do
-        haceFrioFarenheit 45 `shouldBe` True
-      it "es verdad cuando hacen exactamente 8 grados celsius (46.4 F)" $ do
+      -- Pista: hay 3 casos a testear
+      it "" $ do
+        pendingWith "Pensar un caso para este test, escribir el nombre y el cuerpo del mismo"
+      it "" $ do
+        pendingWith "Escribir un nombre para este test"
         haceFrioFarenheit 46.4 `shouldBe` True
-      it "es falso cuando hacen mas de 8 grados celsius (46.4 F)" $ do
-        haceFrioFarenheit 47 `shouldBe` False
+      it "" $ do
+        pendingWith "Pensar un caso para este test, escribir el nombre y el cuerpo del mismo"
 
 suiteDeTestsDeParteIII =
   describe "Parte 3: Mas Numeros!" $ do
 
     describe "max'" $ do
-      it "si el primero es mayor al segundo devuelve el primero" $ do
-        max' 2 1 `shouldBe` 2
-      it "si el primero es menor al segundo devuelve el segundo" $ do
-        max' 1 2 `shouldBe` 2
-      it "si ambos son iguales, devuelve ese valor" $ do
-        max' 1 1 `shouldBe` 1
+      -- Pista: hay 3 casos a testear
+      it "" $ do
+        pendingWith "Pensar un caso para este test, escribir el nombre y el cuerpo del mismo"
+      it "" $ do
+        pendingWith "Pensar un caso para este test, escribir el nombre y el cuerpo del mismo"
+      it "" $ do
+        pendingWith "Pensar un caso para este test, escribir el nombre y el cuerpo del mismo"
 
     describe "min'" $ do
-      it "si el primero es mayor al segundo devuelve el segundo" $ do
-        min' 2 1 `shouldBe` 1
-      it "si el primero es menor al segundo devuelve el primero" $ do
-        min' 1 2 `shouldBe` 1
-      it "si ambos son iguales, devuelve ese valor" $ do
-        min' 1 1 `shouldBe` 1
-        
+      it "" $ do
+        pendingWith "Pensar un caso para este test, escribir el nombre y el cuerpo del mismo"
+      it "" $ do
+        pendingWith "Pensar un caso para este test, escribir el nombre y el cuerpo del mismo"
+      it "" $ do
+        pendingWith "Pensar un caso para este test, escribir el nombre y el cuerpo del mismo"
+
+suiteDeTestsDeParteIIIBonus =
+  describe "Parte 3 Bonus" $ do
+    describe "cuantosDiasTiene" $ do
+      it "devuelve 365 días para un año no bisiesto" $ do
+        pendingWith "Escribir el cuerpo de este test"
+
+      it "devuelve 366 días para un año bisiesto" $ do
+        pendingWith "Escribir el cuerpo de este test"
+    
+    describe "precioTotal" $ do
+      it "retorna el precio total para menos de 3 productos" $ do
+        pendingWith "Escribir el cuerpo de este test"
+
+      it "retorna el precio total con un descuento del 10% para entre 3 y 10 productos" $ do
+        pendingWith "Escribir el cuerpo de este test"
+
+      it "retorna el precio total con un descuento del 30% cuando se compran de a mas de 10 productos" $ do
+        pendingWith "Escribir el cuerpo de este test"
+
 suiteDeTestsDeParteIV =
   describe "Parte 4: Pinos" $ do
 
     describe "pesoPino" $ do
-      it "el peso de un pino de hasta 3 metros, es 3kg por centimetro" $ do
-        pesoPino 2 `shouldBe` 600
-      it "el peso de un pino de 3 metros, es 3kg por centimetro" $ do
-        pesoPino 3 `shouldBe` 900
-      it "el peso de un pino de mas de 3 metros, es 3kg por centimetro para los primeros 3 metros, y 2kg por centimetro por cada uno de los metros restantes" $ do
-        pesoPino 4 `shouldBe` 1100
+      escribiTestsParaEstaFuncion
 
     describe "esPesoUtil" $ do
-      it "es falso si el peso es menor a 400" $ do
-        esPesoUtil 399 `shouldBe` False
-      it "es verdad si el peso es 400" $ do
-        esPesoUtil 400 `shouldBe` True
-      it "es verdad si el peso está entre 400 y 1000" $ do
-        esPesoUtil 700 `shouldBe` True
-      it "es verdad si el peso es 1000" $ do
-        esPesoUtil 1000 `shouldBe` True
-      it "es falso si el peso es más de 1000" $ do
-        esPesoUtil 1001 `shouldBe` False
+      escribiTestsParaEstaFuncion
 
     describe "sirvePino" $ do
-      it "es verdad si el peso del pino le es util a la fabrica" $ do
-        sirvePino 2 `shouldBe` True
-      it "es falso si el peso del pino no le es util a la fabrica" $ do
-        sirvePino 1 `shouldBe` False
-        sirvePino 5 `shouldBe` False
+      escribiTestsParaEstaFuncion
+
+escribiTestsParaEstaFuncion :: SpecWith ()
+escribiTestsParaEstaFuncion = pure ()
 
 shouldBeEqualUpTo2Decimals :: Number -> Number -> Expectation
 shouldBeEqualUpTo2Decimals aNumber anotherNumber = shouldBeEqualWithErrorLessThan 0.01 aNumber anotherNumber
@@ -145,3 +153,6 @@ shouldBeEqualWithErrorLessThan :: Number -> Number -> Number -> Expectation
 shouldBeEqualWithErrorLessThan error aNumber anotherNumber
   | aNumber - anotherNumber < error = pure () -- Esto hace que el test de verde!
   | otherwise = expectationFailure (show aNumber ++ " no es igual (comparando con error < " ++ show error ++ ") a " ++ show anotherNumber)
+
+runHspec :: Spec -> IO ()
+runHspec tests = hspecWith defaultConfig {configFormatter = Just specdoc} tests

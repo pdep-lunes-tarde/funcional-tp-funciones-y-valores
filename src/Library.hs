@@ -10,7 +10,7 @@ esPositivo :: Number -> Bool
 esPositivo = implementame
 
 -- escriban el tipo de esta función
-inversa = implementame
+inversa n = implementame
 
 -- 2. Temperaturas
 
@@ -26,23 +26,21 @@ haceFrioCelsius grados = implementame
 -- escriban el tipo de esta función
 haceFrioFarenheit grados = implementame
 
--- 2.5 Bonus
--- Descomentar las siguientes líneas si van a resolver esta parte
--- perimetroCirculo :: Number -> Number
--- perimetroCirculo radio = implementame
+-- 2.5 Bonus OPCIONAL
+perimetroCirculo :: Number -> Number
+perimetroCirculo radio = implementame
 
--- perimetroCuadrado :: Number -> Number
--- perimetroCuadrado lado = implementame
+perimetroCuadrado :: Number -> Number
+perimetroCuadrado lado = implementame
 
--- superficieCuadrado :: Number -> Number
--- superficieCuadrado lado = implementame
+superficieCuadrado :: Number -> Number
+superficieCuadrado lado = implementame
 
--- superficieCubo :: Number -> Number
--- superficieCubo lado = implementame
+superficieCubo :: Number -> Number
+superficieCubo lado = implementame
 
--- superficieCilindro :: Number -> Number -> Number
--- superficieCilindro radio altura = implementame
-
+superficieCilindro :: Number -> Number -> Number
+superficieCilindro radio altura = implementame
 
 -- 3. Mas numeros!
 
@@ -52,13 +50,12 @@ max' = implementame
 min' :: Number -> Number -> Number
 min' = implementame
 
--- 3.5 Bonus
--- Descomentar las siguientes líneas si van a resolver esta parte
--- cuantosDiasTiene :: Number -> Number
--- cuantosDiasTiene anio = implementame
+-- 3.5 Bonus OPCIONAL
+cuantosDiasTiene :: Number -> Number
+cuantosDiasTiene anio = implementame
 
--- precioTotal :: Number -> Number -> Number
--- precioTotal valorUnitario cantidad = implementame
+precioTotal :: Number -> Number -> Number
+precioTotal valorUnitario cantidad = implementame
 
 -- 4. Pinos
 
