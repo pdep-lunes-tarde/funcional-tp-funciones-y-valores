@@ -48,18 +48,6 @@ La forma que recomendamos de resolver el ejercicio es no programar todo de una y
 
 Para esto, les recomiendo que usen mucho `stack ghci` para probar cosas por consola, y vuelvo a linkear [esta página](https://github.com/pdep-utn/enunciados-miercoles-noche/blob/master/pages/haskell/trabajo.md#comandos-%C3%BAtiles) donde se explican un par de cositas de como usar `ghci`.
 
-### Testeo automatizado
-
-Nuestra solución tiene que estar escrita en el archivo `Library.hs` del directorio `src`, entonces podemos correr pruebas **automatizadas** en la terminal:
-
-```bash
-stack test
-```
-
-También pueden ejecutar una sesión interactiva en la terminal lo cual hace que los tests se vuelvan a correr solos cada vez que guardas!: `stack test --file-watch`, como muestra [esta página](https://github.com/pdep-utn/enunciados-miercoles-noche/blob/master/pages/haskell/trabajo.md#pruebas-automatizadas).
-
-Para conocer un poco más del testeo unitario automatizado recomendamos leer [este apunte](https://docs.google.com/document/d/17EPSZSw7oY_Rv2VjEX2kMZDFklMOcDVVxyve9HSG0mE/edit#)
-
 -------------------------------
 
 # El enunciado
@@ -99,6 +87,21 @@ Implementar las siguientes funciones, escribiendo su tipo:
 ----
 
 ### 2. [Empezando a testear] Temperaturas 🌡️
+
+-----------------
+Podemos correr pruebas **automatizadas** en la terminal que prueban si nuestro código hace lo que queremos con:
+
+```bash
+stack test
+```
+
+Pero `stack test` puede ser un poco lento, así que también podemos instalar un programa que nos deja correrlos casi instantáneamente cada vez que hacemos un cambio en nuestro código: `ghcid`. [Guía para configurarlo](https://github.com/pdepviernestm/2021-clases/blob/main/clase-02/correrTestsMasRapidoConGhcid.md#okay-c%C3%B3mo-lo-uso)
+
+Para conocer un poco más del testeo unitario automatizado recomendamos leer [este apunte](https://docs.google.com/document/d/17EPSZSw7oY_Rv2VjEX2kMZDFklMOcDVVxyve9HSG0mE/edit#)
+
+-----------------
+
+Ahora sí, al ejercicio en sí:
 
 Las temperaturas en diferentes países se miden en grados, pero no todos usan el mismo sistema de medida. En la mayor partedel el mundo usamos los grados Celsius (°C) pero en algunos países como en Estados Unidos se usan los grados Farenheit (°F).
 ¿Cómo se pasa de celsius a farenheit? Usando la siguiente formula:
