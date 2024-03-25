@@ -11,9 +11,6 @@ Integrantes:
 - Legajo: **Completar** 
 - Nombre: **Completar**
 
-- Legajo: **Completar** 
-- Nombre: **Completar**
-
 
 ## Objetivos
 
@@ -130,53 +127,6 @@ Ahora, queremos una función a la cuál podamos preguntarle si hace frío o no. 
 **Para `haceFrioCelsius` y `haceFrioFarenheit` también tienen que escribir el tipo ustedes**.
 
 ---
-
-## 3. [Guardas] Más números! 📈
-
-Acá vamos a definir un par de funciones muy útiles, `max` y `min`.
-- **max** toma dos valores como parámetro y nos devuelve aquel que sea mas grande
-- **min** toma lo mismo que max pero nos devuelve el que sea mas chico.
-Entonces, yo puedo hacer `min 2 3` y el resultado sería `2`, y si hago `max 3 15.5` el resultado debería ser 15.5.
-
-Como estas funciones ya existen en Haskell, pero queremos definirlas igual para practicar, vamos a ponerles de nombre `max'` y `min'` (el ' es un caracter valido para las funciones en Haskell), y en este ejercicio no vale definirlas como `max' = max` ;).
-
-**Para las funciones de este punto hay que escribir los tests**.
----
-
-### 3.5⚡**Bonus OPCIONAL**⚡
-
-- **cuantosDiasTiene**, que dado un año nos devuelve la cantidad de días de ese año. Un año tiene 365 días si no es bisiesto y 366 si sí lo es.
-- En un supermercado hay una promoción al comprar al por mayor, entonces queremos definir una función **precioTotal** que represente esa promoción. Las reglas de la misma son, dado el valor unitario del producto y la cantidad de productos comprados:
-  - Si se compraron menos de 3, el total es el precio del producto por la cantidad.
-  - Si se compraron entre 3 y 10, el total es el 90% del precio del producto por la cantidad.
-  - Si se compraron 10 o mas, el total es el 70% del precio del producto por la cantidad.
----
-
-### 4. Pinos 🌲
-
-En una plantación de pinos, de cada árbol se conoce la altura expresada en metros. El peso de un pino se puede calcular a partir de la altura así:
-
-  - 3 kg por cada centímetro hasta 3 metros,
-  - 2 kg por cada centímetro arriba de los 3 metros. 
-
-![](https://raw.githubusercontent.com/MumukiProject/mumuki-guia-funcional-practica-valores-y-funciones/master/images/pino.png)
-
-Por ejemplo:
-
-  - 2 metros pesan 600 kg, porque 200 * 3 = 600
-  - 5 metros pesan 1300 kg, porque los primeros 3 metros pesan 900 kg y los siguientes 2 pesan los 400 restantes. 
-    
-![](https://raw.githubusercontent.com/MumukiProject/mumuki-guia-funcional-practica-valores-y-funciones/master/images/pinos.png)
-
-Los pinos se usan para llevarlos a una fábrica de muebles, a la que le sirven árboles de entre 400 y 1000 kilos, un pino fuera de este rango no le sirve a la fábrica. Entonces, un pino de 2 metros serviría porque pesa 600kg, pero un pino de 5 metros no serviría porque pesa 1300kg.
-
-Vamos a definir las siguientes funciones, y en este punto, todas van a ser tipadas por ustedes:
-
-- **pesoPino**: recibe la altura de un pino en metros y devuelve su peso.
-- **esPesoUtil**: recibe un peso en kg y responde si un pino de ese peso le sirve a la fábrica
-- **sirvePino**: recibe la altura de un pino y responde si un pino de ese peso le sirve a la fábrica. 
-
-**Para las funciones de este punto hay que escribir los tests**.
 
 ## Que hacer cuando terminan el TP
 
