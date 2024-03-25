@@ -8,12 +8,9 @@ import Test.Hspec.Formatters (progress, specdoc)
 
 correrTests :: IO ()
 correrTests = runHspec $ do
-  focus suiteDeTestsDeParteI
+  suiteDeTestsDeParteI
   suiteDeTestsDeParteIBonus
-  focus suiteDeTestsDeParteII
-  suiteDeTestsDeParteIII
-  suiteDeTestsDeParteIIIBonus
-  suiteDeTestsDeParteIV
+  suiteDeTestsDeParteII
   
 suiteDeTestsDeParteI =
   describe "Parte I: Numeros" $ do
@@ -40,7 +37,7 @@ suiteDeTestsDeParteI =
         esPositivo 0 `shouldBe` False
 
 suiteDeTestsDeParteIBonus =
-  describe "Parte 3 Bonus" $ do
+  describe "Parte 1 Bonus" $ do
     it "el perimetro de un circulo es 2 * pi * radio" $ do
       perimetroCirculo 2.5 `shouldBeEqualUpTo2Decimals` 15.70796
     it "el perimetro de un cuadrado es el lado x 4" $ do
@@ -91,57 +88,6 @@ suiteDeTestsDeParteII =
         haceFrioFarenheit 46.4 `shouldBe` True
       it "" $ do
         pendingWith "Pensar un caso para este test, escribir el nombre y el cuerpo del mismo"
-
-suiteDeTestsDeParteIII =
-  describe "Parte 3: Mas Numeros!" $ do
-
-    describe "max'" $ do
-      -- Pista: hay 3 casos a testear
-      it "" $ do
-        pendingWith "Pensar un caso para este test, escribir el nombre y el cuerpo del mismo"
-      it "" $ do
-        pendingWith "Pensar un caso para este test, escribir el nombre y el cuerpo del mismo"
-      it "" $ do
-        pendingWith "Pensar un caso para este test, escribir el nombre y el cuerpo del mismo"
-
-    describe "min'" $ do
-      it "" $ do
-        pendingWith "Pensar un caso para este test, escribir el nombre y el cuerpo del mismo"
-      it "" $ do
-        pendingWith "Pensar un caso para este test, escribir el nombre y el cuerpo del mismo"
-      it "" $ do
-        pendingWith "Pensar un caso para este test, escribir el nombre y el cuerpo del mismo"
-
-suiteDeTestsDeParteIIIBonus =
-  describe "Parte 3 Bonus" $ do
-    describe "cuantosDiasTiene" $ do
-      it "devuelve 365 días para un año no bisiesto" $ do
-        pendingWith "Escribir el cuerpo de este test"
-
-      it "devuelve 366 días para un año bisiesto" $ do
-        pendingWith "Escribir el cuerpo de este test"
-    
-    describe "precioTotal" $ do
-      it "retorna el precio total para menos de 3 productos" $ do
-        pendingWith "Escribir el cuerpo de este test"
-
-      it "retorna el precio total con un descuento del 10% para entre 3 y 10 productos" $ do
-        pendingWith "Escribir el cuerpo de este test"
-
-      it "retorna el precio total con un descuento del 30% cuando se compran de a mas de 10 productos" $ do
-        pendingWith "Escribir el cuerpo de este test"
-
-suiteDeTestsDeParteIV =
-  describe "Parte 4: Pinos" $ do
-
-    describe "pesoPino" $ do
-      escribiTestsParaEstaFuncion
-
-    describe "esPesoUtil" $ do
-      escribiTestsParaEstaFuncion
-
-    describe "sirvePino" $ do
-      escribiTestsParaEstaFuncion
 
 escribiTestsParaEstaFuncion :: SpecWith ()
 escribiTestsParaEstaFuncion = pure ()
