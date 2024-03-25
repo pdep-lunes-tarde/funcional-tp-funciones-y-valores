@@ -56,7 +56,7 @@ Para cada integrante del grupo:
 
 -----------------------------------
 
-Este ejercicio está partido en 4 partes que van aumentando de a poco en complejidad. En cada uno van a tener que implementar las definiciones de algunas funciones para las que ya les vamos a dar tests que prueben que su solución esta funcionando correctamente y (en la mayoría de los casos) los tipos. Algunas de las funciones además de pedirles la implementación también les vamos a pedir que definan sus tipos.
+En cada punto van a tener que implementar las definiciones de algunas funciones para las que ya les vamos a dar tests que prueben que su solución esta funcionando correctamente y (en la mayoría de los casos) los tipos. Algunas de las funciones además de pedirles la implementación también les vamos a pedir que definan sus tipos.
 
 ### 1. [Repasando funciones] Números 🔢
 
