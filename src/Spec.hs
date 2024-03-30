@@ -53,20 +53,20 @@ suiteDeTestsDeParteIBonus =
 
 suiteDeTestsDeParteII =
   describe "Parte 2: Temperaturas" $ do
-    describe "celsiusAFarenheit" $ do
-      it "pasa una temperatura de celsius a farenheit" $ do
+    describe "celsiusAFahrenheit" $ do
+      it "pasa una temperatura de celsius a fahrenheit" $ do
         pendingWith "Reemplacen los implementame con valores de prueba que ustedes elijan. Luego borren esta linea"
-        celsiusAFarenheit implementame `shouldBeEqualUpTo2Decimals` implementame
+        celsiusAFahrenheit implementame `shouldBeEqualUpTo2Decimals` implementame
 
-    describe "farenheitACelsius" $ do
-      it "pasa una temperatura de farenheit a celsius" $ do
+    describe "fahrenheitACelsius" $ do
+      it "pasa una temperatura de fahrenheit a celsius" $ do
         pendingWith "reemplacen los 'implementame' por valores de prueba que ustedes elijan, luego borren esta linea"
-        farenheitACelsius implementame `shouldBeEqualUpTo2Decimals` implementame
+        fahrenheitACelsius implementame `shouldBeEqualUpTo2Decimals` implementame
 
-    describe "farenhetiACelsius y celsiusAFarenheit son inversas" $ do
-      it "convertir un valor en celsius a farenheit y luego volver a convertir a celsius retorna el valor original" $ do
-        pendingWith "Escriban el cuerpo de un test en el que se chequee que si convierto un numero a farenheit y luego convierto el resultado a celsius obtengo el valor original"
-      it "convertir un valor en farenheit a celsius y luego volver a convertir a farenheit retorna el valor original" $ do
+    describe "fahrenheitACelsius y celsiusAFahrenheit son inversas" $ do
+      it "convertir un valor en celsius a fahrenheit y luego volver a convertir a celsius retorna el valor original" $ do
+        pendingWith "Escriban el cuerpo de un test en el que se chequee que si convierto un numero a fahrenheit y luego convierto el resultado a celsius obtengo el valor original"
+      it "convertir un valor en fahrenheit a celsius y luego volver a convertir a fahrenheit retorna el valor original" $ do
         pendingWith "Lo mismo que el test anterior pero al reves"
       
 
@@ -81,13 +81,13 @@ suiteDeTestsDeParteII =
       it "" $ do
         pendingWith "Pensar un caso para este test, escribir el nombre y el cuerpo del mismo"
 
-    describe "haceFrioFarenheit" $ do
+    describe "haceFrioFahrenheit" $ do
       -- Pista: hay 3 casos a testear
       it "" $ do
         pendingWith "Pensar un caso para este test, escribir el nombre y el cuerpo del mismo"
       it "" $ do
         pendingWith "Escribir un nombre para este test"
-        haceFrioFarenheit 46.4 `shouldBe` True
+        haceFrioFahrenheit 46.4 `shouldBe` True
       it "" $ do
         pendingWith "Pensar un caso para este test, escribir el nombre y el cuerpo del mismo"
 

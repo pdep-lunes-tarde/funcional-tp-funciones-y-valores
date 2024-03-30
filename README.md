@@ -100,31 +100,31 @@ Para conocer un poco más del testeo unitario automatizado recomendamos leer [es
 
 Ahora sí, al ejercicio en sí:
 
-Las temperaturas en diferentes países se miden en grados, pero no todos usan el mismo sistema de medida. En la mayor partedel el mundo usamos los grados Celsius (°C) pero en algunos países como en Estados Unidos se usan los grados Farenheit (°F).
-¿Cómo se pasa de celsius a farenheit? Usando la siguiente formula:
+Las temperaturas en diferentes países se miden en grados, pero no todos usan el mismo sistema de medida. En la mayor partedel el mundo usamos los grados Celsius (°C) pero en algunos países como en Estados Unidos se usan los grados Fahrenheit (°F).
+¿Cómo se pasa de celsius a fahrenheit? Usando la siguiente formula:
 
 ```
-GradosFarenheit = GradosCelsius × 1.8 + 32
+GradosFahrenheit = GradosCelsius × 1.8 + 32
 ```
 
 Y para el otro lado se puede obtener despejando GradosCelsius:
 
 ```
-GradosCelsius = (GradosFarenheit - 32) / 1.8
+GradosCelsius = (GradosFahrenheit - 32) / 1.8
 ```
 
 Entonces, vamos a implementar unas funciones que hagan esto por nosotros:
 
-- **celsiusAFarenheit**: toma una temperatura (que la vamos a representar como un número) en celsius, y la convierte a farenheit. 
-- **farenheitACelsius**: está función hace el camino inverso a la anterior, le damos una temperatura en farenheit y la pasa a celsius.
+- **celsiusAFahrenheit**: toma una temperatura (que la vamos a representar como un número) en celsius, y la convierte a fahrenheit. 
+- **fahrenheitACelsius**: está función hace el camino inverso a la anterior, le damos una temperatura en fahrenheit y la pasa a celsius.
 
 Ahora, queremos una función a la cuál podamos preguntarle si hace frío o no. Nuestro criterio va a ser que hace frío sólo si la temperatura es menor o igual a **8 grados Celsius**. Entonces, definamos:
 
 - **haceFrioCelsius**: recibe una temperatura (en Celsius) y debería ser verdadero si hace igual o menos de 8 grados Celsius.
-- **haceFrioFarenheit**: ésta recibe la temperatura como parámetro en Farenheit, pero el criterio para saber si hace frío es el mismo de antes.
+- **haceFrioFahrenheit**: ésta recibe la temperatura como parámetro en Fahrenheit, pero el criterio para saber si hace frío es el mismo de antes.
 
 **Para las funciones de este punto hay que completar y/o escribir los tests**.
-**Para `haceFrioCelsius` y `haceFrioFarenheit` también tienen que escribir el tipo ustedes**.
+**Para `haceFrioCelsius` y `haceFrioFahrenheit` también tienen que escribir el tipo ustedes**.
 
 ---
 

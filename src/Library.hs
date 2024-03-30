@@ -14,17 +14,17 @@ inversa n = implementame
 
 -- 2. Temperaturas
 
-celsiusAFarenheit :: Number -> Number
-celsiusAFarenheit celsius = implementame
+celsiusAFahrenheit :: Number -> Number
+celsiusAFahrenheit celsius = implementame
 
-farenheitACelsius :: Number -> Number
-farenheitACelsius farenheit = implementame
+fahrenheitACelsius :: Number -> Number
+fahrenheitACelsius fahrenheit = implementame
 
 -- escriban el tipo de esta función
 haceFrioCelsius grados = implementame
 
 -- escriban el tipo de esta función
-haceFrioFarenheit grados = implementame
+haceFrioFahrenheit grados = implementame
 
 -- 2.5 Bonus OPCIONAL
 perimetroCirculo :: Number -> Number
