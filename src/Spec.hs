@@ -45,7 +45,7 @@ suiteDeTestsDeParteIBonus =
     it "el perimetro de un cuadrado es el lado x 4" $ do
       perimetroCuadrado 3 `shouldBe` 12
     it "la superficie de un cuadrado es el lado al cuadrado" $ do
-      perimetroCuadrado 3 `shouldBe` 9
+      superficieCuadrado 3 `shouldBe` 9
     it "la superficie de un cubo es el area de una cara por la cantidad de caras (6)" $ do
       superficieCubo 3 `shouldBe` 54
     it "la superficie de un cilindro es el area de las tapas por el area de la pared del cilindro" $ do
