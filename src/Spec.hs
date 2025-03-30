@@ -2,12 +2,9 @@ module Spec where
 import PdePreludat
 import Library
 import Test.Hspec
-import           Control.Monad (unless)
-import Test.Hspec.Runner (Config(..), hspecWith, defaultConfig)
-import Test.Hspec.Formatters (progress, specdoc)
 
 correrTests :: IO ()
-correrTests = runHspec $ do
+correrTests = hspec $ do
 -- Si alguna suit de tests tiene "focus" adelante, solo se va a correr esa.
 -- Asi que, para ir probando los puntos, agreguen focus a los demas, o saquenselo a todos:
   focus suiteDeTestsDeParteI
@@ -101,6 +98,3 @@ shouldBeEqualWithErrorLessThan :: Number -> Number -> Number -> Expectation
 shouldBeEqualWithErrorLessThan error aNumber anotherNumber
   | aNumber - anotherNumber < error = pure () -- Esto hace que el test de verde!
   | otherwise = expectationFailure (show aNumber ++ " no es igual (comparando con error < " ++ show error ++ ") a " ++ show anotherNumber)
-
-runHspec :: Spec -> IO ()
-runHspec tests = hspecWith defaultConfig {configFormatter = Just specdoc} tests
