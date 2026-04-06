@@ -1,16 +1,9 @@
 # TP-1
 
-## Grupo, nombre y legajo de integrantes
-
-- Nombre del grupo: **Completar**
-
-Integrantes:
-- Legajo: **Completar** 
-- Nombre: **Completar**
+## Nombre y legajo
 
 - Legajo: **Completar** 
 - Nombre: **Completar**
-
 
 ## Objetivos
 
@@ -23,7 +16,7 @@ El primer TP que preparamos para que resuelvan tiene como objetivos:
 
 ## Pre-requisitos
 
-Necesitás haber instalado el ambiente según se explica en el [TP-0](https://classroom.github.com/a/u4aiGg9H).
+Necesitás haber instalado el ambiente según se explica en el [TP-0](https://classroom.github.com/a/iSl8Geaf).
 
 ## Ayuda
 
@@ -58,7 +51,7 @@ Para cada integrante del grupo:
 
 En cada punto van a tener que implementar las definiciones de algunas funciones para las que ya les vamos a dar tests que prueben que su solución esta funcionando correctamente y (en la mayoría de los casos) los tipos. Algunas de las funciones además de pedirles la implementación también les vamos a pedir que definan sus tipos.
 
-### 1. [Repasando funciones] Números 🔢
+### 1. Números 🔢
 
 Empecemos definiendo algunas funciones simples sobre números:
 
@@ -68,7 +61,7 @@ Empecemos definiendo algunas funciones simples sobre números:
 
 ---
 
-### 1.5⚡**Bonus OPCIONAL**⚡Perímetros y áreas
+### 1.5 Perímetros y áreas
 
 Implementar las siguientes funciones, escribiendo su tipo:
 - **perimetroCirculo** dado un radio. Ej:
@@ -83,7 +76,7 @@ Implementar las siguientes funciones, escribiendo su tipo:
 
 ----
 
-### 2. [Empezando a testear] Temperaturas 🌡️
+### 2. Temperaturas 🌡️
 
 -----------------
 Podemos correr pruebas **automatizadas** en la terminal que prueban si nuestro código hace lo que queremos con:
@@ -125,10 +118,3 @@ Ahora, queremos una función a la cuál podamos preguntarle si hace frío o no. 
 
 **Para las funciones de este punto hay que completar y/o escribir los tests**.
 **Para `haceFrioCelsius` y `haceFrioFahrenheit` también tienen que escribir el tipo ustedes**.
-
----
-
-## Que hacer cuando terminan el TP
-
-Cuando terminen, creen un issue etiquetando a sus tutores así les llega una notificación y se corrigen y les dejan feedback ahí.
-![](https://i.imgur.com/ypeXpBw.gif)

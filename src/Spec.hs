@@ -90,11 +90,3 @@ suiteDeTestsDeParteII =
 
 escribiTestsParaEstaFuncion :: SpecWith ()
 escribiTestsParaEstaFuncion = pure ()
-
-shouldBeEqualUpTo2Decimals :: Number -> Number -> Expectation
-shouldBeEqualUpTo2Decimals aNumber anotherNumber = shouldBeEqualWithErrorLessThan 0.01 aNumber anotherNumber
-
-shouldBeEqualWithErrorLessThan :: Number -> Number -> Number -> Expectation       
-shouldBeEqualWithErrorLessThan error aNumber anotherNumber
-  | abs (aNumber - anotherNumber) < error = pure () -- Esto hace que el test de verde!
-  | otherwise = expectationFailure (show aNumber ++ " no es igual (comparando con error < " ++ show error ++ ") a " ++ show anotherNumber)
